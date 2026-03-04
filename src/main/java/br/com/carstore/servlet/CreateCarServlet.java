@@ -18,5 +18,7 @@ public class CreateCarServlet extends HttpServlet {
         System.out.println(carName);
 
         req.getRequestDispatcher("index.html").forward(req , resp);
+
+        int teste = 0;
     }
 }
