@@ -17,8 +17,15 @@ public class CreateCarServlet extends HttpServlet {
 
         System.out.println(carName);
 
-        req.getRequestDispatcher("index.html").forward(req , resp);
+        resp.setContentType("application/json");
 
-        int teste = 0;
+        String json = "{ \"carName\": \"" + carName + "\"}";
+
+        resp.getWriter().write(json);
+
+
+
+
+
     }
 }
